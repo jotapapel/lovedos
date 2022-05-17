@@ -8,7 +8,7 @@
 function love.nogame()
 
   function love.load()
-    love.graphics.setBackgroundColor(0, 138, 225)
+    love.graphics.setBackgroundColor(65, 182, 89)
   end
 
   function love.keypressed(key)
