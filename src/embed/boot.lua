@@ -119,7 +119,7 @@ function love.errhand(msg)
 
   -- Init error state
   love.graphics.reset()
-  pcall(love.graphics.setBackgroundColor, 201, 103, 105)
+  pcall(love.graphics.setBackgroundColor, 255, 160, 122)
 
   -- Do error main loop
   while true do

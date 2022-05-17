@@ -8,7 +8,7 @@
 function love.nogame()
 
   function love.load()
-    love.graphics.setBackgroundColor(65, 182, 89)
+    love.graphics.setBackgroundColor(255, 250, 205)
   end
 
   function love.keypressed(key)
@@ -24,10 +24,10 @@ function love.nogame()
   end
 
   function love.draw()
-    love.graphics.setColor(255, 255, 255)
+    love.graphics.setColor(255, 160, 122)
     drawText("LoveDOS " .. love.getVersion(), 90)
     drawText("No game", 102)
-    love.graphics.setColor(95, 181, 255)
+    love.graphics.setColor(255, 215, 0)
     drawText("Press ESCAPE to quit", 186)
   end
 

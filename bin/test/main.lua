@@ -1,3 +1,6 @@
+local name <const> = 99
+name = nil
+
 love.draw = function()
 	love.graphics.clear()
 	love.graphics.setColor(255, 0, 0)
