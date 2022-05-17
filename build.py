@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 import os, sys, shutil, re, textwrap
 
-COMPILER    = "i586-pc-msdosdjgpp-gcc"
+COMPILER    = "/Users/josem.mezaortiz/Downloads/djgpp2/bin/i586-pc-msdosdjgpp-gcc-7.3.0"
 SRC_DIR     = "src"
 BIN_DIR     = "bin"
 BIN_NAME    = "love.exe"

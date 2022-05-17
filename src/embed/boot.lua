@@ -8,12 +8,12 @@
 function love.boot()
   -- Init package.path and add filesystem-compatible package loader
   package.path = "?.lua;?/init.lua"
-  table.insert(package.loaders, 1, function(modname)
+  table.insert(package.searchers, 1, function(modname)
     modname = modname:gsub("%.", "/")
     for x in package.path:gmatch("[^;]+") do
       local file = x:gsub("?", modname)
       if love.filesystem.exists(file) then
-        return assert(loadstring(love.filesystem.read(file), "=" .. file))
+        return assert(load(love.filesystem.read(file), "=" .. file))
       end
     end
   end)
